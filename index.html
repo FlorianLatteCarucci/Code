@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères et du titre de la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones - Personnages</title>
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Game of Thrones - Personnages</h1>
+        <!-- Navigation avec des boutons pour changer de section -->
+        <nav>
+            <ul>
+                <li><button class="tab-button active" data-tab="stark">Maison Stark</button></li>
+                <li><button class="tab-button" data-tab="lannister">Maison Lannister</button></li>
+                <li><button class="tab-button" data-tab="targaryen">Maison Targaryen</button></li>
+                <li><button class="tab-button" data-tab="autres">Autres</button></li>
+            </ul>
+        </nav>
+        <!-- Bouton pour activer/désactiver le mode sombre -->
+        <button id="dark-mode-toggle">Mode Sombre</button>
+    </header>
+
+    <main>
+        <!-- Section pour la maison Stark -->
+        <section id="stark" class="tab-content active">
+            <h2>Maison Stark</h2>
+            <div class="personnage">
+                <h3>Jon Snow</h3>
+                <p>Un héros courageux et loyal.</p>
+            </div>
+            <div class="personnage">
+                <h3>Arya Stark</h3>
+                <p>Une guerrière redoutable et indépendante.</p>
+            </div>
+        </section>
+
+        <!-- Section pour la maison Lannister -->
+        <section id="lannister" class="tab-content">
+            <h2>Maison Lannister</h2>
+            <div class="personnage">
+                <h3>Cersei Lannister</h3>
+                <p>Manipulatrice et ambitieuse.</p>
+            </div>
+            <div class="personnage">
+                <h3>Tyrion Lannister</h3>
+                <p>Un stratège brillant et plein d'esprit.</p>
+            </div>
+        </section>
+
+        <!-- Section pour la maison Targaryen -->
+        <section id="targaryen" class="tab-content">
+            <h2>Maison Targaryen</h2>
+            <div class="personnage">
+                <h3>Daenerys Targaryen</h3>
+                <p>La mère des dragons.</p>
+            </div>
+        </section>
+
+        <!-- Section pour les autres personnages -->
+        <section id="autres" class="tab-content">
+            <h2>Autres Personnages</h2>
+            <div class="personnage">
+                <h3>Tormund Giantsbane</h3>
+                <p>Un sauvageon loyal et courageux.</p>
+            </div>
+        </section>
+
+        <!-- Section simulateur de combat -->
+        <section id="combat">
+            <h2>Simulateur de Combat</h2>
+            <!-- Bouton pour lancer la simulation de combat -->
+            <button id="simulate-btn">Lancer le combat</button>
+            <p id="combat-result"></p>
+        </section>
+
+        <!-- Formulaire pour ajouter un personnage -->
+        <section id="formulaire">
+            <h2>Ajouter un Personnage</h2>
+            <form id="ajout-personnage-form">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" required>
+                <label for="maison">Maison :</label>
+                <select id="maison" required>
+                    <option value="stark">Stark</option>
+                    <option value="lannister">Lannister</option>
+                    <option value="targaryen">Targaryen</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <!-- Bouton pour soumettre le formulaire -->
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Game of Thrones - Site fictif</p>
+    </footer>
+
+    <!-- Script JavaScript pour les fonctionnalités interactives -->
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- Formulaire d'inscription à la newsletter -->
+<section id="email-subscription">
+    <h2>Inscription à la newsletter</h2>
+    <form id="email-form">
+        <label for="email">Entrez votre email :</label>
+        <input type="text" id="email" placeholder="example@gmail.com" required>
+        <span id="email-feedback"></span>
+        <!-- Bouton pour s'inscrire -->
+        <button type="submit">S'inscrire</button>
+    </form>
+</section>
